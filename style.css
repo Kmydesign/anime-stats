@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #191c1e;
+    color: #c0c8cd;
+}
+.navbar {
+    height: 60px;
+    border-bottom: solid #bce9ff 2px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.stats {
+    margin-top: 25px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #c0c8cd;
+}
+
+.navbar a:hover{
+    color: #bce9ff;
+
+}
+
+.navbar ul li {
+    margin: 20px;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 8;
+}
+
+.insight {
+    display: flex;
+    margin: 25px auto;
+    padding: 25px;
+    text-align: center;
+align-items: center;
+justify-content: center;
+color: #64d3ff;
+}
+
+.insight .box p {
+    font-size: 100px;
+}
+
+.insight .box, .box-column {
+    border-radius: 5px;
+    background: rgb(0, 53, 69, 0.3);
+    margin: 25px auto;
+    padding: 25px;
+}
+
+.box-column {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+}
+
+.box-stats {
+    margin: 0px 50px;
+}
+
+
+.watchlist {
+    background: rgb(0, 53, 69, 0.3);
+    margin: 25px auto;
+    border-radius: 5px;
+    padding-top: 25px;
+    text-align: center;
+    color: #64d3ff;
+}
+.container-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto;
+    font-size: 14px;
+}
+
+.container-two .box {
+    margin: auto;
+    height: 250px;
+}
+
+.container-two p{
+    width: 125px;
+    text-align: center;
+}
+
+.container-two img {
+    height: 175px;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    background: #191c1e;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+ .container .insight, .box-column{
+        flex-direction: column;
+        text-align: center;
+        margin: 25px;
+        padding: 0px;
+    }
+
+    .box-stats {
+        margin: 25px;
+        font-size: 12px;
+    }
+
+    .container-two {
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        font-size: 12px;
+    }
+}
